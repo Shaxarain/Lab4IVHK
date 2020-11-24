@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript actions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>JS Actions</h1>
+<div>
+  <ol>
+    <li><button onClick="errorsView('You clicked');"> Click</a></li>
+    <li><button onMouseover="errorsView('You moused over');"> Mouse over</a></li>
+    <li><button onMouseout="errorsView('You moused away');"> Mouse out</a></li>
+  </ol>
+  <form onSubmit="validateField('email');">
+    <p>
+      <label for="email">Changing Color on Focus and Blur</label>
+      <input id="email" type="text" onFocus="this.style.backgroundColor='green';" onBlur="this.style.backgroundColor='red';">
+    </p>
+    <p>
+      <input type="submit" value="Submit" onClick="errorsView('You clicked submit!');">
+    </p>
+  </form>
+</div>
+<div><p>Actions:</p>
+  <span id="errors"></span></div>
+  <script  src="./script.js"></script>
+</body>
+</html>

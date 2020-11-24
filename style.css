@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 64px auto;
+  width: 94%;
+  max-width: 640px;
+  line-height: 1.0;
+}
